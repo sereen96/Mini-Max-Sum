@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$arr=array(15 ,7,9,3,6);
+$max=$arr[0];
+$min=$arr[0];
+$summax=0;
+$summin=0;
+
+
+for($i=0;$i<count($arr);$i++){
+	
+	if($max<$arr[$i])
+		$max=$arr[$i];
+	
+		if($min>$arr[$i])
+		$min=$arr[$i];
+}
+
+for($x=0;$x<count($arr);$x++){
+	
+	if($max!= $arr[$x])
+	$summin +=$arr[$x];
+  
+		if($min!= $arr[$x])
+			 $summax +=$arr[$x];
+}
+echo("sum max ". $summax . " <br>");
+echo("sum min ". $summin . " <br>");
+?>
+</body>
+</html>
